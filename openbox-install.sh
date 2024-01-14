@@ -10,5 +10,6 @@ cp .gtkrc-2.0 ~/.gtkrc-2.0
 chmod -R +x ~/.config/openbox/scripts
 chmod +x ~/.config/rofi/powermenu.sh
 sudo pacman -Syu --needed --noconfirm - < packages-repository.txt
+sudo pacman systemctl enable lightdm
 # eos-packagelist --install "Openbox Edition"
 dbus-launch dconf load / < xed.dconf
